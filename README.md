@@ -6,7 +6,7 @@ X-editable for Rails
 
 ## Live demo
 
-Checkout live demo [here](https://x-editable-rails.herokuapp.com/?denied=true) 
+Checkout live demo [here](https://x-editable-rails.herokuapp.com/?denied=true)
 
 ## Installation
 
@@ -35,9 +35,9 @@ Choose between the following javascripts:
 
 You'll also need to include editable/rails in your scripts for this to work.
 
-```coffee
-#= require editable/bootstrap-editable
-#= require editable/rails
+```javascript
+//= require editable/bootstrap-editable
+//= require editable/rails
 ```
 
 Choose the corresponding stylesheets:
@@ -57,18 +57,18 @@ Choose the corresponding stylesheets:
 
 Enable editing with jQuery:
 
-```coffee
+```javascript
 $('.editable').editable()
 ```
 
 For custom inputs like the Wysihtml5 editor, add these dependencies:
 
-```coffee
-#= require editable/bootstrap-editable
-#= require editable/inputs-ext/wysihtml5
-#= require editable/inputs-ext/bootstrap-wysihtml5
-#= require editable/inputs-ext/wysihtml5-editable
-#= require editable/rails
+```javascript
+//= require editable/bootstrap-editable
+//= require editable/inputs-ext/wysihtml5
+//= require editable/inputs-ext/bootstrap-wysihtml5
+//= require editable/inputs-ext/wysihtml5-editable
+//= require editable/rails
 ```
 
 And related stylesheets:
@@ -118,7 +118,7 @@ editable @model, :enabled, source: source
 ```
 
 * **value** - This option will override the `model.name` value
-* **classes** - This is a custom option for `x-editable-rails` that will change the editable element's CSS class based on the selected value. Use the `source` hash structure to map a CSS class name to a value. (This [functionality](vendor/assets/javascripts/editable/rails/data_classes.js.coffee) is toggled when the value changes and the "save" event is triggered.)
+* **classes** - This is a custom option for `x-editable-rails` that will change the editable element's CSS class based on the selected value. Use the `source` hash structure to map a CSS class name to a value. (This [functionality](vendor/assets/javascripts/editable/rails/data_classes.js) is toggled when the value changes and the "save" event is triggered.)
 
 ```ruby
 source  = [ "Active", "Disabled" ]
